@@ -59,7 +59,7 @@ app.prepare().then(() => {
     .use(Sentry.Handlers.errorHandler())
     .listen(port, (err) => {
       if (err) {
-        throw errr;
+        throw err;
       }
 
       console.log("process.env.SENTRY_DSN", process.env.SENTRY_DSN);
